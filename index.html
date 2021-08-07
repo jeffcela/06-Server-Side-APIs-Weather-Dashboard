@@ -10,8 +10,28 @@
     <title> Your Weather Dashboard</title>
   </head>
 
-  <body>
+    <body>
+      <header class="text-center text-light ">
+        <h1>Weather Dashboard</h1>
+        <h5 id="currentDate"></h5>
+      </header>
     
+      <div class="container m-0">
+        <div class="row">
+          <div class="col-sm-3" id="left-column">
+            <h5 class="city-header">Search By City:</h5>
+            <form>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="inputValue" placeholder="City Name" />
+                <button class="btn btn-primary" type="search" id="searchBtn">Search</button>
+              </div>
+            </form>
+            <br />
+            <ul id="list-city" class="list-group"></ul>
+          </div>
+          <div class="col-sm-9 right-panel">
+            <div class="card" id="weatherResults"></div>
+          </div>
 
     <!-- External Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
